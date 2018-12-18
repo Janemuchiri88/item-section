@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="card">
+      <div class="top-section">
+        <img id="image-container" src="images/img 1.jpg" alt="image 1">
+        <div class="nav">
+          <img onclick="change_img(this)" src="images/img 1.jpg" alt="image 1">
+          <img onclick="change_img(this)" src="images/img 2.jpg" alt="image 2">
+          <img onclick="change_img(this)" src="images/img 3.jpg" alt="image 3">
+        </div>
+        <div class="price"> $25 </div>
+      </div>
+      <div class="product-info">
+        <div class="name"> Sunglasses </div>
+          <div class="dis">Awesome women sunglasses </div>
+          <a class="btn" href="#">Add to cart</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var container= document.getElementById('image-container');
+      function change_img(image) {
+        container.src= image.src;
+      }
+    </script>
+  </body>
+</html>
